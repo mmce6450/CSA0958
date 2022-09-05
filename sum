@@ -1,0 +1,21 @@
+mport java.io.*;
+import java.util.*;
+
+class sumseries
+{
+	public static void main(String args[])
+	{
+		double sum=1, m=0;
+		System.out.println("Enter the value for n to compute sum of series");
+		Scanner a = new Scanner(System.in);
+		int p = a.nextInt();
+		for (int i=1;i<p;i++)
+		{
+			m = (m*10) + 2;
+			sum = sum +(1/m);			
+		}
+		System.out.println("Sum of the Series" + sum);
+	}
+}
+
+	
